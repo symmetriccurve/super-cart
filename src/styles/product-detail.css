@@ -1,0 +1,17 @@
+.product-detail {
+    border-color: rgba(0, 0, 0, 0.09);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+    margin: 70px 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.product-detail__image {
+    height: 500px;
+}
+
+.details__label {
+    font-size: 20px;
+    padding-left: 50px;
+}
