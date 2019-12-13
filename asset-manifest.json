@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/super-cart/static/css/main.7f131bbd.chunk.css",
+    "main.js": "/super-cart/static/js/main.22f9c32a.chunk.js",
+    "main.js.map": "/super-cart/static/js/main.22f9c32a.chunk.js.map",
+    "runtime-main.js": "/super-cart/static/js/runtime-main.4e710ecc.js",
+    "runtime-main.js.map": "/super-cart/static/js/runtime-main.4e710ecc.js.map",
+    "static/js/2.ccb9f19c.chunk.js": "/super-cart/static/js/2.ccb9f19c.chunk.js",
+    "static/js/2.ccb9f19c.chunk.js.map": "/super-cart/static/js/2.ccb9f19c.chunk.js.map",
+    "index.html": "/super-cart/index.html",
+    "precache-manifest.fd8994fab7083d49f7501d31894a8738.js": "/super-cart/precache-manifest.fd8994fab7083d49f7501d31894a8738.js",
+    "service-worker.js": "/super-cart/service-worker.js",
+    "static/css/main.7f131bbd.chunk.css.map": "/super-cart/static/css/main.7f131bbd.chunk.css.map",
+    "static/media/logo.png": "/super-cart/static/media/logo.eb593920.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4e710ecc.js",
+    "static/js/2.ccb9f19c.chunk.js",
+    "static/css/main.7f131bbd.chunk.css",
+    "static/js/main.22f9c32a.chunk.js"
+  ]
+}
