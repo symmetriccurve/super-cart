@@ -7,7 +7,7 @@ import Header from '../components/Header';
 import ResetDataBase from '../pages/ResetDataBase';
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
