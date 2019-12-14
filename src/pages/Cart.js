@@ -6,10 +6,10 @@ class Cart extends Component {
   constructor() {
     super()
     this.state = {
-      products: []
+      productsInCart: []
     }
 
-    this.updateProducts = this.updateProducts.bind(this)
+    this.updateProductWithId_original = this.updateProductWithId_original.bind(this)
   }
 
     componentDidMount(){
@@ -18,37 +18,35 @@ class Cart extends Component {
       .then(function(streamObject){
         return streamObject.json()
       })
-      .then(function(products){ 
-        const cartProducts = products.filter(product=> product.isInCart)
-        componentInstance.setState({ products: cartProducts })
+      .then(function(allProducts){ 
+        const cartProducts = allProducts.filter(oneSingleProduct=> oneSingleProduct.isInCart)
+        componentInstance.setState({ productsInCart: cartProducts })
       })
     }
 
-    updateProducts(updatedProduct) {
-      var oldCart = this.state.products
-      var newCart = []
+    updateProductWithId_original(updatedProduct) {
+      var oldProductsInCart= this.state.productsInCart
+      var newProductsInCart = []
       //create a bug here
-      oldCart.map(product=>{
-        if(product.id !== updatedProduct.id ){
-          newCart.push(product)
+      oldProductsInCart.forEach(oneSingleProduct=>{
+        if(oneSingleProduct.id !== updatedProduct.id ){
+          newProductsInCart.push(oneSingleProduct)
         }
       })
       this.setState({
-        products: newCart
+        productsInCart: newProductsInCart
       })
     }
 
     render() {
       return (
-        <div>
           <div className="cart card">
             {
-              this.state.products.map(product=>{
-                return <Product productInfo={product} key={product.id} updateProducts={this.updateProducts} />
+              this.state.productsInCart.map(oneSingleProduct=>{
+                return <Product productInfo_copy={oneSingleProduct} key={oneSingleProduct.id} updateProductWithId_reference={this.updateProductWithId_original} />
               })
             }
           </div>
-        </div>
       )
     }
   }

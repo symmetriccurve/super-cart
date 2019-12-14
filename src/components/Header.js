@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import logo from '../images/logo.png'
+
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
   Link
 } from "react-router-dom";
 
