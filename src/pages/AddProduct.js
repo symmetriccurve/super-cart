@@ -80,7 +80,7 @@ class AddProduct extends Component {
     } = this.state;
     //Destructuring
     return (
-      <div className="add-product">
+      <div className="add-product card">
         {isAdded ? (
           <h1> Added Successfully </h1>
         ) : (

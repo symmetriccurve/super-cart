@@ -44,7 +44,7 @@ class Product extends React.Component {
     const isInCart = productInfo.isInCart
 
     return (
-      <div className="product-card">
+      <div className="product card">
         <h2 className="product-card__name">{name}</h2>
         <h3 className="product-card__price">Rs.{price}</h3>
         <img className="product-card__image" alt="example" src={image} />

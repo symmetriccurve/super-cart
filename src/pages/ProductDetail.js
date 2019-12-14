@@ -15,7 +15,7 @@ const ProductDetail = function(props) {
     })
 
     return(
-      <div className='product-detail'>
+      <div className='product-detail card'>
         <img src={productDetails.image} className='product-detail__image'/>
         <div className='product-detail__details'>
           <h1 className='details__label' >Category: {productDetails.category}</h1>

@@ -19,7 +19,7 @@ class Cart extends Component {
         return streamObject.json()
       })
       .then(function(products){ 
-        const cartProducts = products.filter( product=> product.isInCart)
+        const cartProducts = products.filter(product=> product.isInCart)
         componentInstance.setState({ products: cartProducts })
       })
     }
@@ -41,10 +41,10 @@ class Cart extends Component {
     render() {
       return (
         <div>
-          <div className="cart">
+          <div className="cart card">
             {
-              this.state.products.map(each=>{
-                return <Product productInfo={each} key={each.id} updateProducts={this.updateProducts} />
+              this.state.products.map(product=>{
+                return <Product productInfo={product} key={product.id} updateProducts={this.updateProducts} />
               })
             }
           </div>

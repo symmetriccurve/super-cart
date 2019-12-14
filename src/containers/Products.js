@@ -33,7 +33,7 @@ class Products extends Component {
   render() {
     return (
       <div>
-        <div className="products-container">
+        <div className="products-container card">
           {
             this.state.products.map(each => {
               return <Product productInfo={each} key={each.id} updateProducts={this.updateProducts} />

@@ -20,4 +20,4 @@ class Header extends Component {
   }
 }
 
-export default Header
+[export](https://www.belvikram.com, "Export is a ES6 Keyword used to Export is a ES6 Keyword used to Export is a ES6 Keyword used to Export is a ES6 Keyword used to Export is a ES6 Keyword used to check more here https://www.belvikram.com") default Header

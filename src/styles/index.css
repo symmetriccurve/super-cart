@@ -19,3 +19,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.card {
+  border-color: rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+}

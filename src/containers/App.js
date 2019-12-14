@@ -8,9 +8,7 @@ import ResetDataBase from '../pages/ResetDataBase';
 
 import {
   HashRouter as Router,
-  Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 function App() {

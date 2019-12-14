@@ -1,8 +1,6 @@
 .add-product{
     display: flex;
     flex-direction: column;
-    border-color: rgba(0, 0, 0, 0.09);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
     margin: 90px 10px;
     padding: 10px;
     align-items: center;
