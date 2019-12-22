@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Product from '../components/Product'
-//import _ from 'lodash'
-
+import _ from 'underscore'
 class Cart extends Component {
   constructor() {
     super()
@@ -14,6 +13,7 @@ class Cart extends Component {
 
     componentDidMount(){
       const componentInstance = this
+
       fetch('https://super-cart.firebaseio.com/products.json')
       .then(function(streamObject){
         return streamObject.json()
@@ -25,17 +25,44 @@ class Cart extends Component {
     }
 
     updateProductWithId_original(updatedProduct) {
-      var oldProductsInCart= this.state.productsInCart
-      var newProductsInCart = []
-      //create a bug here
-      oldProductsInCart.forEach(oneSingleProduct=>{
-        if(oneSingleProduct.id !== updatedProduct.id ){
-          newProductsInCart.push(oneSingleProduct)
-        }
-      })
+      var oldProductsInCart = this.state.productsInCart
+
+      /* ES6
+        var newProductsInCart = oldProductsInCart.filter(function(oneSingleProduct){
+          return oneSingleProduct.id !== updatedProduct.id
+        })
+
+      */
+
+      //ES5
+      // var newProductsInCart = oldProductsInCart.filter(oneSingleProduct=>{
+      //   return oneSingleProduct.id !== updatedProduct.id
+      // })
+
+      /** Using a Library called underscore - a javascript utility library to  
+       */
+
+      var newProductsInCart = _.reject(
+          oldProductsInCart,
+          oneSingleProduct=>oneSingleProduct.id === updatedProduct.id
+      )
+    
+      /**
+       * Array has in build methods to sort,filter,push,pop items in a list, the below is what filter
+       * does internally
+      
+        oldProductsInCart.forEach(oneSingleProduct=>{ // Go Over each Object
+          if(oneSingleProduct.id !== updatedProduct.id ){ // check if each of single product match with product that is clicked
+            newProductsInCart.push(oneSingleProduct) // if true, push it into newProductsInCart
+          }
+        })
+      */
+
+      //Finally update the State: productsInCart variable with newProductsInCart which has every product, except one which is removed
       this.setState({
         productsInCart: newProductsInCart
       })
+
     }
 
     render() {
