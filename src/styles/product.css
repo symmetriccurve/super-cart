@@ -11,7 +11,7 @@
 
 @media only screen and (max-width: 600px) {
     .product-card__image{
-        width: 350px;
+        width: 200px;
     }
 
     .product-card{

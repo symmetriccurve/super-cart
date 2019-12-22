@@ -105,5 +105,6 @@ class Product extends React.Component {
 
 }
 
+export { Product}
 export default withRouter(Product)
 
