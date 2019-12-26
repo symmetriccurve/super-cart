@@ -35,4 +35,4 @@ To run the application on your local machine, simple clone the repository.
 
 > $/supercart/: yarn start
 
-Should open the application on [localhost:3000](localhost:3000)
+Should open the application on [localhost:3000](http://localhost:3000)
