@@ -1,10 +1,11 @@
-## Super-Cart
-
+---
 A simple ecommerance application used to understand the building blocks of React. 
 
 ![Super-Cart Logo](https://github.com/symmetriccurve/super-cart/blob/master/src/images/logo.png)
 
-
+---
+Code Crafted by [Vikram Belde](www.belvikram.com)
+---
 
 `Logo Generated using: https://www.namecheap.com/logo-maker/app/editor`
 
