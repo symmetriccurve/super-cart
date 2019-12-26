@@ -11,6 +11,12 @@ A simple ecommerance application used to understand the building blocks of React
 
 Demo: https://symmetriccurve.github.io/super-cart
 
+Routes: 
+ - [Home Page](https://symmetriccurve.github.io/super-cart)(List of all available products)
+ - [Product Detail Page](https://symmetriccurve.github.io/super-cart/#/product-detail?id=6)(More Details about product)
+ - [Cart Page](https://symmetriccurve.github.io/super-cart/#/cart)(Shows products added to the cart)
+ - [Reset Page](https://symmetriccurve.github.io/super-cart/#/reset)(Did something weird and webpage does not show anything, reset it here)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
